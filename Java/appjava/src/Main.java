@@ -1,15 +1,14 @@
 public class Main {
     public static void main(String[] args){
-        // Conversión implícita
-        byte a = 1;
-        double b = 15.15;
-        double c = a + b;
-        System.out.println(c);
+        System.out.println(Math.abs(-15));
+        System.out.println(Math.ceil(10.01));
+        System.out.println(Math.floor(10.9));
 
-        // Conversión explícita
-        int x = 15;
-        double y = 15.015;
-        int z = (int) (x + y);
-        System.out.println(z);
+        System.out.println(Math.max(10,21));
+        System.out.println(Math.min(21,50));
+        System.out.println(Math.round(15.16));
+
+        double random = Math.random();
+        System.out.println((int) (random * 100));
     }
 }
