@@ -2,14 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        int a = 15;
-        int b = 10;
+        String[] textos = { "Hola mundo","Juan","Paco","Usuario 1","Jesus"};
 
-        System.out.println(a == b);
-        System.out.println(a != b);
-        System.out.println(a > b);
-        System.out.println(a >= b);
-        System.out.println(a < b);
-        System.out.println(a <= b);
+        for (int i = 0; i < 5; i++) {
+            System.out.println(textos[i]);
+        };
     }
 }
