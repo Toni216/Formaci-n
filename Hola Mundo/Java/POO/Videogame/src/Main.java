@@ -12,6 +12,8 @@ public class Main {
 
         VideoGame juego1 = new VideoGame();
         juego1.setName("Minecraft");
-        System.out.println(juego1.name);
+        juego1.setCategory("action");
+        System.out.println(juego1.getCategory());
+        System.out.println();
     }
 }

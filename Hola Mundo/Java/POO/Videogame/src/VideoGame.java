@@ -1,6 +1,7 @@
 public class VideoGame {
     String name;
     Double price;
+    static String categories[] = {"action" , "rpg", "adventure", "racing"};
     String category;
 
     public String getName() {
@@ -24,6 +25,20 @@ public class VideoGame {
     }
 
     public void setCategory(String category) {
-        this.category = category;
+        boolean isInList = false;
+
+        for(String c: VideoGame.categories){
+            if (c.equals(category)) {
+                isInList = true;
+                break;
+            }
+        }
+
+        if (isInList) {
+            this.category = category;
+        } else {
+            System.out.println("No está :(");
+        }
+
     }
 }
