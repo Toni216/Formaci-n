@@ -3,7 +3,5 @@ public class Coche {
     String modelo;
     double velocidadActual = 0;
 
-    acelerar(int cantidad) {
 
-    }
 }
