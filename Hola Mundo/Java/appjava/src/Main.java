@@ -1,16 +1,14 @@
 import recursos.Base;
 import recursos.Categorias;
+import recursos.Productos;
 
 
 public class Main {
     public static void main(String[] args) {
         Categorias c = new Categorias("Telefono");
-        Categorias c2 = new Categorias("Telefono");
-        System.out.println(c == c2);
-//        Base base = new Base("Hola");
-//
-//
-//        miMetodo(c);
+        Productos p = new Productos("iPhone");
+        Base[] recursos = { c, p };
+        guardarRecursos(recursos);
     }
 
     public static void miMetodo(Base base) {
@@ -19,5 +17,11 @@ public class Main {
             c.metodoCategoria();
         }
         System.out.println(base.getName());
+    }
+
+    public static void guardarRecursos(Base[] recursos) {
+        for (Base recurso: recursos){
+            System.out.println(recurso.getName());
+        }
     }
 }
