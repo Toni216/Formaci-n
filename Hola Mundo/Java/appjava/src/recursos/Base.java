@@ -1,6 +1,6 @@
 package recursos;
 
-public class Base {
+public abstract class Base {
     public String name;
 
     public Base(String name){
