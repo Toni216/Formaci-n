@@ -1,14 +1,14 @@
 package recursos;
 
-public abstract class Base {
-    public String name;
+public class Base {
+    String name;
 
-    public Base(String name){
+    public Base(String name) {
         this.name = name;
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
