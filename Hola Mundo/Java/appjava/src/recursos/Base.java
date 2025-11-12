@@ -1,6 +1,6 @@
 package recursos;
 
-public class Base {
+public abstract class Base {
     String name;
 
     public Base(String name) {
@@ -14,4 +14,6 @@ public class Base {
     public void setName(String name) {
         this.name = name;
     }
+
+    public abstract void guardar();
 }

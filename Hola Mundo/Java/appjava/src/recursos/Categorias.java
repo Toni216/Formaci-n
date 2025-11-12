@@ -10,8 +10,16 @@ public class Categorias extends Base{
         return this.name;
     }
 
+    public void metodoCategoria() {
+        System.out.println("soy instancia de categorias");
+    }
+
     @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
+    }
+
+    public void guardar() {
+        System.out.println("Guardando categoría");
     }
 }
