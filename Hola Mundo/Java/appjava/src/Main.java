@@ -1,27 +1,13 @@
-import recursos.Base;
-import recursos.Categorias;
-import recursos.Productos;
+import recursos.*;
 
 public class Main {
     public static void main(String[] args) {
-        Categorias c = new Categorias("Teléfonos");
-        Productos p = new Productos("Xiaomi");
-        Base[] recursos = { c, p };
-        guardarRecursos(recursos);
-    }
+        Restaurante r = new Restaurante();
 
-    public static void miMetodo(Base base) {
-        if (base instanceof Categorias) {
-            var c = (Categorias)base;
-            c.metodoCategoria();
-        }
+        Garzon g1 = new Garzon();
+        Garzon g2 = new Garzon();
+        Garzon g3 = new Garzon();
 
-        System.out.println(base.getName());
-    }
-
-    public static void guardarRecursos(Base[] recursos) {
-        for (Base recurso: recursos){
-            recurso.guardar();
-        }
+        r.llevarCervezas(new Garzon[]{ g1, g2, g3 });
     }
 }
