@@ -15,6 +15,5 @@ public class Main {
 
         System.out.println(perimetro);
         System.out.println(area);
-        System.out.println(diagonal);
-    }
+        System.out.println(diagonal);    }
 }
