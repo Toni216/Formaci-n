@@ -1,18 +1,15 @@
-import recursos.*;
+import genericos.Lista;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Garzon g1 = new Garzon();
-        Garzon g2 = new Garzon();
-        Garzon g3 = new Garzon();
-        Cocinero c = new Cocinero();
-        Restaurante r = new Restaurante(new Atendible[]{ g1, g2, g3 });
+        Lista<String> lista = new Lista<>();
+        lista.add("Juan");
+        lista.add("Paco");
+        var mirar = lista.get(1);
 
-
-
-        r.llevarCervezas();
-
-        Cocinable cs = new Cocinero();
-        cs.cocinar();
+        System.out.println(mirar);
     }
 }
