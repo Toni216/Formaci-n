@@ -11,7 +11,8 @@ public class Main {
                 "Antonio", "Clara", "Óscar",
                 "Claudia", "Diego", "Futuf",
                 "Senan", "Monchis", "Laura",
-                "Sar", "Jose", "UnFrikiMas"
+                "Sar", "Jose", "UnFrikiMas",
+                "Greshman"," "
         };
 
         java.util.List<String> lista = Arrays.asList(jugadores);
@@ -26,6 +27,7 @@ public class Main {
             equipo2[i] = jugadores[i + jugadores.length / 2];
         }
 
+        System.out.println("Son " + lista.toArray().length + " jugadores");
         System.out.println("Equipo 1: " + Arrays.toString(equipo1));
         System.out.println("Equipo 2: " + Arrays.toString(equipo2));
     }
