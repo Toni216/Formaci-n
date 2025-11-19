@@ -1,15 +1,12 @@
-import genericos.Lista;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import genericos.Garzon;
 
 public class Main {
     public static void main(String[] args) {
-        Lista<String> lista = new Lista<>();
-        lista.add("Juan");
-        lista.add("Paco");
-        var mirar = lista.get(1);
+        Garzon g1 = new Garzon(1);
+        Garzon g2 = new Garzon(2);
 
-        System.out.println(mirar);
+        if (g1.compareTo(g2) < 0) {
+            System.out.println("g2 es mayor");
+        }
     }
 }
