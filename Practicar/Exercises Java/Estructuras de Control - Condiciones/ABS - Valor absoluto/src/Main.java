@@ -8,5 +8,6 @@ public class Main {
         int x = scanner.nextInt();
 
         System.out.println("El valor absoluto del número introducido es de " + Math.abs(x));
+
     }
 }
