@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int cajaRegistradora = 100;
+//        int cajaRegistradora = 100;
 
         System.out.println("Introduzca el precio del producto: ");
         int precio = scanner.nextInt();
         System.out.println("Introduzca la cantidad a pagar: ");
         int pagar = scanner.nextInt();
         int cambio = pagar - precio;
-        int resto;
+//        int resto;
 
         while (cambio >= 100) {
             System.out.println("100 ");
